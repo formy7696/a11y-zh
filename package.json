@@ -1,0 +1,32 @@
+{
+  "name": "a11y-zh",
+  "version": "1.0.0",
+  "description": "面向中文开发者的网页无障碍检查工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/formy7696/a11y-zh.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/formy7696/a11y-zh/issues"
+  },
+  "homepage": "https://github.com/formy7696/a11y-zh#readme",
+  "dependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "axe-core": "^4.14.0",
+    "commander": "^15.0.0",
+    "playwright": "^1.64.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "type": "module"
+}
