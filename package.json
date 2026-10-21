@@ -1,10 +1,12 @@
 {
   "name": "a11y-zh",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "面向中文开发者的网页无障碍检查工具",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx src/cli.ts",
+    "scan": "tsx src/cli.ts"
   },
   "repository": {
     "type": "git",
@@ -12,7 +14,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/formy7696/a11y-zh/issues"
   },
