@@ -1,0 +1,12 @@
+{
+  "id": "aria-prohibited-attr",
+  "title": "元素使用了不被允许的 ARIA 属性",
+  "whyItMatters": "每种 HTML 角色只支持特定的 ARIA 属性。例如没有语义的 div 或 span 上写 aria-label，读屏软件通常会直接忽略，开发者以为加了说明，用户实际听不到。",
+  "whoIsAffected": ["视障用户"],
+  "howToFix": "先确认元素有合适的角色：能用原生标签（button、a、img 等）就用原生标签；必须用 div 或 span 时，补上正确的 role 再使用 aria-label；或者删掉无效的 ARIA 属性，改用可见文字。",
+  "examples": {
+    "bad": "<div aria-label=\"搜索\"></div>",
+    "good": "<button type=\"submit\" aria-label=\"搜索\"></button>"
+  },
+  "wcag": "4.1.2 名称、角色、值（A 级）"
+}
