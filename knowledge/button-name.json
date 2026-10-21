@@ -1,0 +1,16 @@
+{
+  "id": "button-name",
+  "title": "按钮没有可识别的名称",
+  "whyItMatters": "只有图标、没有文字的按钮，读屏软件只会读出“按钮”，用户不知道点下去会发生什么。语音控制用户也无法通过名称说出要点击哪个按钮。",
+  "whoIsAffected": ["视障用户", "使用语音控制的用户"],
+  "howToFix": "给按钮加上可见文字；如果设计上只能显示图标，就用 aria-label 提供名称。",
+  "examples": {
+    "bad": "<button><i class=\"icon-close\"></i></button>",
+    "good": "<button aria-label=\"关闭\"><i class=\"icon-close\"></i></button>"
+  },
+  "frameworkTips": {
+    "vue": "<el-button :icon=\"Close\" aria-label=\"关闭\" />",
+    "react": "<button aria-label=\"关闭\"><CloseIcon /></button>"
+  },
+  "wcag": "4.1.2 名称、角色、值（A 级）"
+}

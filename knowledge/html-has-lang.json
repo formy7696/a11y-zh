@@ -1,0 +1,16 @@
+{
+  "id": "html-has-lang",
+  "title": "页面没有声明语言",
+  "whyItMatters": "读屏软件靠 lang 属性选择发音引擎。没有声明时，可能会用英文发音去读中文，听起来完全不知所云。浏览器的翻译功能也要参考它。",
+  "whoIsAffected": ["视障用户", "使用翻译功能的用户"],
+  "howToFix": "在 <html> 标签上加 lang 属性，简体中文写 zh-CN，繁体中文写 zh-TW 或 zh-HK。",
+  "examples": {
+    "bad": "<html>",
+    "good": "<html lang=\"zh-CN\">"
+  },
+  "frameworkTips": {
+    "vue": "在 index.html 的 <html> 标签上直接加 lang=\"zh-CN\"",
+    "react": "Next.js 里在 layout 的 <html lang=\"zh-CN\"> 上设置"
+  },
+  "wcag": "3.1.1 页面语言（A 级）"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "document-title",
+  "title": "页面缺少标题",
+  "whyItMatters": "读屏软件打开页面后第一句读的就是标题。没有标题，用户不知道自己到了哪里；浏览器标签页、收藏夹和搜索结果里也会显示成网址。",
+  "whoIsAffected": ["视障用户", "同时打开多个标签页的所有用户"],
+  "howToFix": "在 <head> 里加上 <title>，内容要能概括当前页面，多页面网站里每页标题应该不同。",
+  "examples": {
+    "bad": "<head>\n  <meta charset=\"utf-8\">\n</head>",
+    "good": "<head>\n  <meta charset=\"utf-8\">\n  <title>订单详情 - 我的商城</title>\n</head>"
+  },
+  "frameworkTips": {
+    "vue": "在路由守卫里按页面设置 document.title，或使用 @vueuse/head",
+    "react": "使用 react-helmet-async 或框架自带的 metadata 功能"
+  },
+  "wcag": "2.4.2 页面标题（A 级）"
+}

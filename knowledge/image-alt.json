@@ -1,0 +1,16 @@
+{
+  "id": "image-alt",
+  "title": "图片缺少替代文本",
+  "whyItMatters": "读屏软件遇到没有 alt 的图片，往往只会读出文件名或者“图片”，视障用户无法知道图片想表达什么。图片加载失败时，其他用户也看不到任何说明。",
+  "whoIsAffected": ["视障用户", "网络较差、图片加载失败的用户"],
+  "howToFix": "有信息含义的图片，写一句简洁的 alt 说明内容或作用；纯装饰图片使用空 alt（alt=\"\"），让读屏软件直接跳过。",
+  "examples": {
+    "bad": "<img src=\"banner.png\">",
+    "good": "<img src=\"banner.png\" alt=\"双十一全场五折活动\">"
+  },
+  "frameworkTips": {
+    "vue": "<img :src=\"item.cover\" :alt=\"item.title\">",
+    "react": "<img src={item.cover} alt={item.title} />"
+  },
+  "wcag": "1.1.1 非文本内容（A 级）"
+}

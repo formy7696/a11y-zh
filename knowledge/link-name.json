@@ -1,0 +1,16 @@
+{
+  "id": "link-name",
+  "title": "链接没有可识别的文字",
+  "whyItMatters": "读屏用户经常把页面上所有链接列成一张清单来浏览。空链接或者只读出“点击这里”，在清单里毫无意义，用户不知道链接通向哪里。",
+  "whoIsAffected": ["视障用户", "使用语音控制的用户"],
+  "howToFix": "链接文字要能单独说明去向。图片链接要给图片写 alt，图标链接用 aria-label。",
+  "examples": {
+    "bad": "<a href=\"/about\"></a>",
+    "good": "<a href=\"/about\">关于我们</a>"
+  },
+  "frameworkTips": {
+    "vue": "<router-link to=\"/about\">关于我们</router-link>",
+    "react": "<a href=\"/about\" aria-label=\"关于我们\"><Icon /></a>"
+  },
+  "wcag": "2.4.4 链接目的（A 级）、4.1.2 名称、角色、值（A 级）"
+}
